@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Informe seu nome: ")
+        var sobrenome = window.prompt("Informe seu sobrenome: ")
+        var salario =  Number(window.prompt("Informe seu salário mensal em REAL: ")).toFixed(2).replace('.', ',').toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        var dolar = Number(salario/4.88)
+        var euro = Number(salario/5.28)
+        document.write(`Seu nome é ${nome.toUpperCase()} ${sobrenome.toLocaleLowerCase()} <br> Você possui (${salario} Reais),(${dolar} Dolares) e (${euro} Euros)`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex002</title>
+    <style>
+        body{
+            background-color:antiquewhite ;
+            font-size: medium;
+            color: tomato;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+  <h1>Olá, mundo :D</h1>
+  <p>Exercicio <strong>2</strong> de Gustavo Guanabara JavaScript</p>
+  <script>
+    var nome = window.prompt("Qual o seu nome?")
+    var sobrenome = window.prompt("Qual o seu sobrenome?")
+    var correto = Boolean(window.confirm("Está correto?: " + nome + sobrenome))
+    if (correto == true) {
+        window.alert("Seu nome está certo!" + nome + sobrenome)
+    }
+    if (correto == false){
+        var nome = window.prompt("Qual o seu nome?")
+        var sobrenome = window.prompt("Qual o seu sobrenome?")
+        window.alert("Seu nome é: " + nome + sobrenome)
+    }
+  </script>
+</body>
+</html>
